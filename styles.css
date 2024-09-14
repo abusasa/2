@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1b1b;
+    font-family: 'Press Start 2P', cursive; /* 8-битный шрифт */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    border: 5px solid #00ff00;
+    padding: 20px;
+    background-color: #000;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid #fff;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #00ff00;
+}
+
+.item-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.item-list li {
+    margin-bottom: 20px;
+}
+
+.item-list img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated; /* Эффект пикселизации для изображений */
+}
+
+.item-list span {
+    display: block;
+    margin-top: 10px;
+    color: #00ff00;
+}
+
+video {
+    /* Убираем стандартные элементы управления видео */
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Подгоняем видео под размер экрана */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Делаем видео выше других элементов */
+    /* Делаем элементы управления невидимыми */
+    controls: none; /* Отключаем стандартные элементы управления */
+    pointer-events: none; /* Блокируем клики по видео */
+}
